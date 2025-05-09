@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export const Counter = () => {
     const [count, setCount] = useState(0);
-    const {isLoaded, userId, sessionId, getToken} = useAuth()
+    const {isLoaded, userId} = useAuth()
 
     if(!isLoaded || !userId){
         return null;
