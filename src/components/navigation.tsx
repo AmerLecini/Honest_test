@@ -1,4 +1,4 @@
-import { SignInButton, SignOutButton, UserButton } from "@clerk/nextjs"; 
+import { SignInButton, SignOutButton} from "@clerk/nextjs"; 
 import Link from "next/link";
 import { SignedIn } from "@clerk/nextjs";
 import { SignedOut } from "@clerk/nextjs";
@@ -18,7 +18,6 @@ export const Navigation = () => {
             <SignInButton mode="modal"/>
             </SignedOut>
             <SignedIn>
-            {/* <UserButton /> */}
             <Link href="/user-profile">Profile</Link>
             <SignOutButton />
             </SignedIn>
